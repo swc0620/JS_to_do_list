@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="all and (min-width:320px)">
+    <title>Momentum App</title>
+</head>
+<body>
+    <div id="body-wrapper">
+        <div id="wrapper">
+            <div id="clock-div">
+                <h2 id="clock">00:00</h2>
+            </div>
+            <form id="login-form" class="hidden">
+                <input required maxlength="15" type="text" placeholder="What is your name?" id="login-input">
+                <input type="submit" value="Log In" class="hidden">
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            <form id="todo-form">
+                <input required type="text" placeholder="Write your to-do list here" id="todo-input">
+            </form>
+            <ul id="todo-list"></ul>
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
+            <div id="weather-div">
+                <div id="weather">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div id="footer">
+        <div>© 2021 Shin Woochul</div>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
